@@ -7,6 +7,11 @@ public class Country {
     private String mRegion;
     private String mFileName;
 
+    /**
+     * Default constructor for a country used in the quiz
+     * @param name the name of the country
+     * @param region the region that the country is in
+     */
     public Country(String name, String region) {
         mName = name;
         mRegion = region;
@@ -15,26 +20,50 @@ public class Country {
         mFileName = region + "/" + region + "-" + name + ".png";
     }
 
+    /**
+     * Returns the name of the country
+     * @return the name of the country
+     */
     public String getName() {
         return mName;
     }
 
+    /**
+     * Set the name of the country
+     * @param name the name of the country
+     */
     public void setName(String name) {
         mName = name;
     }
 
+    /**
+     * returns the region of the country
+     * @return the region of the country
+     */
     public String getRegion() {
         return mRegion;
     }
 
+    /**
+     * sets the region of the country
+     * @param region the region of the country
+     */
     public void setRegion(String region) {
         mRegion = region;
     }
 
+    /**
+     * returns the file name to load the flag
+     * @return the file name of the country's flag
+     */
     public String getFileName() {
         return mFileName;
     }
 
+    /**
+     * set the file name to load the country's flag
+     * @param fileName the file name of the country's flag
+     */
     public void setFileName(String fileName) {
         mFileName = fileName;
     }
