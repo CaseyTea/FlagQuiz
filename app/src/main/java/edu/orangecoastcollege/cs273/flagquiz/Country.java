@@ -3,10 +3,12 @@ package edu.orangecoastcollege.cs273.flagquiz;
 
 public class Country {
 
+    // Creating Member variables 
     private String mName;
     private String mRegion;
     private String mFileName;
 
+    // Default constructor to set default values for the member variables
     public Country(String name, String region) {
         mName = name;
         mRegion = region;
@@ -15,6 +17,7 @@ public class Country {
         mFileName = region + "/" + region + "-" + name + ".png";
     }
 
+    // Getter fuction to return the name 
     public String getName() {
         return mName;
     }
